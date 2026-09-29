@@ -38,17 +38,46 @@
         <img src="assets/img/brand/emblem.png" alt="Madhab logo">
         <span class="brand-text"><strong>Madhab</strong><small>100% Eggless Bakery</small></span>
       </a>
-      <ul class="nav-links">
-        ${nav.map(([h, l, k]) => `<li><a href="${h}" class="${k === page ? "active" : ""}">${l}</a></li>`).join("")}
-      </ul>
+      <div class="nav-drawer" id="nav-drawer">
+        <div class="nav-drawer-head">
+          <a class="brand" href="index.html" aria-label="Madhab home">
+            <img src="assets/img/brand/emblem.png" alt="Madhab logo">
+            <span class="brand-text"><strong>Madhab</strong><small>100% Eggless Bakery</small></span>
+          </a>
+          <button class="drawer-close" aria-label="Close menu">
+            <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+          </button>
+        </div>
+        <ul class="nav-links">
+          ${nav.map(([h, l, k]) => `<li><a href="${h}" class="${k === page ? "active" : ""}">${l}</a></li>`).join("")}
+        </ul>
+      </div>
       <div class="nav-cta">
-        <button class="menu-toggle" aria-label="Open menu"><span></span></button>
+        <button class="menu-toggle" aria-label="Open menu" aria-expanded="false"><span></span></button>
       </div>
     </div>`;
   document.body.prepend(header);
 
-  header.querySelector(".menu-toggle").addEventListener("click", () => document.body.classList.toggle("menu-open"));
-  header.querySelectorAll(".nav-links a").forEach(a => a.addEventListener("click", () => document.body.classList.remove("menu-open")));
+  const toggleMenu = (open) => {
+    const isOpen = open !== undefined ? open : !document.body.classList.contains("menu-open");
+    document.body.classList.toggle("menu-open", isOpen);
+    const toggleBtn = header.querySelector(".menu-toggle");
+    if (toggleBtn) toggleBtn.setAttribute("aria-expanded", isOpen);
+  };
+
+  header.querySelector(".menu-toggle").addEventListener("click", () => toggleMenu());
+  const closeBtn = header.querySelector(".drawer-close");
+  if (closeBtn) closeBtn.addEventListener("click", () => toggleMenu(false));
+  const backdrop = header.querySelector(".nav-backdrop");
+  if (backdrop) backdrop.addEventListener("click", () => toggleMenu(false));
+  header.querySelectorAll(".nav-links a").forEach(a => a.addEventListener("click", () => toggleMenu(false)));
+
+  window.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && document.body.classList.contains("menu-open")) {
+      toggleMenu(false);
+    }
+  });
+
   const onScroll = () => header.classList.toggle("scrolled", window.scrollY > 30);
   onScroll();
   window.addEventListener("scroll", onScroll, { passive: true });
