@@ -129,6 +129,142 @@
     </div>
   </section>
 
+  <!-- WHERE TO FIND US -->
+  <section class="section" id="where" aria-labelledby="w-h">
+    <div class="container where">
+      <figure class="netmap reveal" aria-label="Map of the districts where Madhab is sold, around our factory in Sultanpur">
+        <svg viewBox="0 0 600 600" id="netsvg" role="img" aria-labelledby="w-h"></svg>
+        <p class="nm-legend"><span><i class="lg-f"></i>Our factory</span><span><i class="lg-up"></i>Uttar Pradesh</span><span><i class="lg-br"></i>Bihar</span></p>
+        <p class="nm-read" id="nmRead" aria-live="polite">Hover or tap a dot to see the district.</p>
+        <figcaption>Directions and straight-line distances from Sultanpur are approximate; the scale is compressed to fit.</figcaption>
+      </figure>
+      <div class="where-info">
+        <span class="eyebrow reveal">Where to find us</span>
+        <h2 class="reveal" id="w-h" style="margin-top:14px">Baked in Sultanpur. <em class="accent">Loved across Uttar Pradesh, and into Bihar.</em></h2>
+        <p class="lead reveal" style="margin-top:16px;font-size:1.05rem">We make everything at our factory in Safipur, Lambhua, and sell through our distributors at the stores they supply. We don't run our own shops.</p>
+        <div class="finder reveal">
+          <label class="finder-l" for="findQ">Is Madhab in your area?</label>
+          <div class="finder-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <input id="findQ" type="text" placeholder="Type your district or town" autocomplete="off" role="combobox" aria-expanded="false" aria-controls="sugg" aria-autocomplete="list">
+            <button type="button" id="findGo" aria-label="Check">Check</button>
+          </div>
+          <ul class="sugg" id="sugg" role="listbox" hidden></ul>
+          <div class="answer" id="answer" aria-live="polite"></div>
+        </div>
+        <p class="dlabel reveal">Where we sell, by state</p>
+        <div class="states reveal" role="tablist" aria-label="States">
+          <button type="button" class="state" role="tab" id="st-UP" data-st="Uttar Pradesh" aria-selected="true" aria-controls="stPanel"><span class="sd up"></span><span class="st-t"><b>Uttar Pradesh</b><small>Home of our factory</small></span><span class="st-n"><b id="distCount">30</b><small>districts</small></span></button>
+          <button type="button" class="state" role="tab" id="st-BR" data-st="Bihar" aria-selected="false" aria-controls="stPanel"><span class="sd br"></span><span class="st-t"><b>Bihar</b><small>Gopalganj district</small></span><span class="st-n"><b>1</b><small>town</small></span></button>
+        </div>
+        <div class="st-panel reveal" id="stPanel" role="tabpanel"></div>
+        <p class="small reveal" style="margin-top:18px;font-size:.85rem;color:var(--muted)">Can't find your area? Call us at <a class="tel" href="tel:+919315231914" style="color:var(--red);font-weight:700">+91 93152 31914</a>, or <a href="distributor.html" class="ul" style="color:var(--red);font-weight:700;text-decoration:underline">bring Madhab to your area</a>.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOCIAL / INSTAGRAM -->
+  <section class="section social" id="social" aria-labelledby="s-h">
+    <div class="container">
+      <div class="soc-card reveal">
+        <div class="soc-copy">
+          <span class="eyebrow">Follow the bake</span>
+          <h2 id="s-h">Say hello on <em class="accent">Instagram.</em></h2>
+          <p class="lead" style="color:var(--text)">Follow <strong>@madhabbread</strong> for what's fresh at Madhab, and tag us when you enjoy our breads.</p>
+          <ul class="soc-list">
+            <li>
+              <span class="si" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M5 10.5C3.3 10 3 8.8 3 8c0-2.2 2.9-4 9-4s9 1.8 9 4c0 .8-.3 2-2 2.5V19a1 1 0 01-1 1H6a1 1 0 01-1-1z"/></svg>
+              </span>
+              <div>
+                <b>New launches</b>
+                <span>See new breads and packs first.</span>
+              </div>
+            </li>
+            <li>
+              <span class="si" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M3 20V10l5 3V10l5 3V6h3v-2h3v16zM3 20h18"/></svg>
+              </span>
+              <div>
+                <b>Inside our factory</b>
+                <span>Moments from our plant in Sultanpur.</span>
+              </div>
+            </li>
+            <li>
+              <span class="si" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M4 5h16v11H9l-5 4z"/></svg>
+              </span>
+              <div>
+                <b>Serving ideas</b>
+                <span>Easy ways to enjoy Madhab at home.</span>
+              </div>
+            </li>
+          </ul>
+          <div class="soc-btns">
+            <a class="btn btn-ig" href="https://www.instagram.com/madhabbread/" target="_blank" rel="noopener" aria-label="Follow @madhabbread on Instagram">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+              Follow @madhabbread
+            </a>
+            <a class="btn btn-fb-outline" href="https://www.facebook.com/p/Madhab-Milk-and-Dairy-House-Agro-Business-Private-Limited-61587177086798/" target="_blank" rel="noopener" aria-label="Madhab Facebook Page">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v2H8v4h2v8h4v-8h3l1-4h-4V8z"/></svg>
+              Facebook
+            </a>
+          </div>
+        </div>
+
+        <a class="phone" href="https://www.instagram.com/madhabbread/" target="_blank" rel="noopener" aria-label="Open Madhab on Instagram">
+          <span class="ph-notch" aria-hidden="true"></span>
+          <span class="ph-screen">
+            <span class="ph-top">
+              <b>madhabbread</b>
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+            </span>
+            <span class="ph-prof">
+              <span class="ph-av">
+                <span class="ring" aria-hidden="true"></span>
+                <img src="assets/img/brand/emblem.png" alt="Madhab Profile">
+              </span>
+              <span class="ph-name">
+                <b>Madhab</b>
+                <small>Breads · Buns · Pav · Rusk<br>Sultanpur, Uttar Pradesh</small>
+              </span>
+            </span>
+            <span class="ph-follow">Follow</span>
+            <span class="ph-grid-wrap">
+              <span class="ph-grid">
+                <i style="background-image:url('assets/img/photos/pav-bhaji.jpg')"></i>
+                <i class="pk" style="background-image:url('assets/img/products/ladi-pav-250g.png')"></i>
+                <i style="background-image:url('assets/img/photos/baked-tray.jpg')"></i>
+                <i style="background-image:url('assets/img/photos/burger.jpg')"></i>
+                <i class="pk" style="background-image:url('assets/img/products/rusk-150g.png')"></i>
+                <i class="pk" style="background-image:url('assets/img/products/cream-roll.png')"></i>
+                <i style="background-image:url('assets/img/photos/sandwich.jpg')"></i>
+                <i class="pk" style="background-image:url('assets/img/products/makkhan-malai-bread.png')"></i>
+                <i class="pk" style="background-image:url('assets/img/products/extra-long-premium-bread.png')"></i>
+                <i class="pk" style="background-image:url('assets/img/products/ajwain-khari.png')"></i>
+                <i class="pk" style="background-image:url('assets/img/products/burger-bun.png')"></i>
+                <i class="pk" style="background-image:url('assets/img/products/sheermal-roti-100g.png')"></i>
+                <!-- duplicate for infinite seamless loop -->
+                <i style="background-image:url('assets/img/photos/pav-bhaji.jpg')"></i>
+                <i class="pk" style="background-image:url('assets/img/products/ladi-pav-250g.png')"></i>
+                <i style="background-image:url('assets/img/photos/baked-tray.jpg')"></i>
+                <i style="background-image:url('assets/img/photos/burger.jpg')"></i>
+                <i class="pk" style="background-image:url('assets/img/products/rusk-150g.png')"></i>
+                <i class="pk" style="background-image:url('assets/img/products/cream-roll.png')"></i>
+                <i style="background-image:url('assets/img/photos/sandwich.jpg')"></i>
+                <i class="pk" style="background-image:url('assets/img/products/makkhan-malai-bread.png')"></i>
+                <i class="pk" style="background-image:url('assets/img/products/extra-long-premium-bread.png')"></i>
+                <i class="pk" style="background-image:url('assets/img/products/ajwain-khari.png')"></i>
+                <i class="pk" style="background-image:url('assets/img/products/burger-bun.png')"></i>
+                <i class="pk" style="background-image:url('assets/img/products/sheermal-roti-100g.png')"></i>
+              </span>
+            </span>
+          </span>
+        </a>
+      </div>
+    </div>
+  </section>
+
   <script src="js/products.js"></script>
   <script src="js/main.js"></script>
 </body>

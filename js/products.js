@@ -1,73 +1,350 @@
-/* Madhab product catalogue — names and pack sizes exactly as printed in the Madhab brochure. */
+/* Madhab complete product catalogue — 23 products in 5 families from the official brochure */
 window.MADHAB_CATEGORIES = [
-  { id: "breads", name: "Breads", hindi: "ब्रेड", tint: "#FCE3C7", photo: "assets/img/photos/sliced-bread.jpg",
-    blurb: "Soft, fresh loaves for every table — from everyday white to rich Makkhan Malai." },
-  { id: "rusk-khari", name: "Rusk & Khari", hindi: "रस्क और खारी", tint: "#F9D9A8", photo: "assets/img/photos/chai.jpg",
-    blurb: "Golden, crunchy partners for your morning chai." },
-  { id: "buns-pav", name: "Buns & Pav", hindi: "बन और पाव", tint: "#FBE0C0", photo: "assets/img/photos/pav-bhaji.jpg",
-    blurb: "Pillowy pav and burger buns made for street-food favourites." },
-  { id: "cream", name: "Cream Delights", hindi: "क्रीम डिलाइट्स", tint: "#FFE7EC", photo: "assets/img/photos/baked-tray.jpg",
-    blurb: "Cream-filled treats that bring a smile to every age." },
-  { id: "sheermal", name: "Sheermal", hindi: "शीरमाल", tint: "#FBE6BF", photo: "assets/img/photos/flour-loaf.jpg",
-    blurb: "The Awadhi classic — sweet, saffron-toned and soft." }
+  {
+    id: "loaves",
+    name: "Loaves",
+    hindi: "ब्रेड एवं लोव्स",
+    tint: "#FCE3C7",
+    photo: "assets/img/photos/sliced-bread.jpg",
+    blurb: "Premium & everyday breads baked fresh for the whole family."
+  },
+  {
+    id: "buns",
+    name: "Buns & Pav",
+    hindi: "बन और पाव",
+    tint: "#FBE0C0",
+    photo: "assets/img/photos/pav-bhaji.jpg",
+    blurb: "Pav, burger & sweet buns made for street-food favourites."
+  },
+  {
+    id: "rusk",
+    name: "Rusk & Khari",
+    hindi: "रस्क और खारी",
+    tint: "#F9D9A8",
+    photo: "assets/img/photos/chai.jpg",
+    blurb: "Crisp, golden tea-time bakes made for morning chai."
+  },
+  {
+    id: "sweet",
+    name: "Sweet Bakes",
+    hindi: "स्वीट बेक्स",
+    tint: "#FFE7EC",
+    photo: "assets/img/photos/baked-tray.jpg",
+    blurb: "Cream rolls, buns & fruit gattu loved by children and families."
+  },
+  {
+    id: "traditional",
+    name: "Traditional",
+    hindi: "शीरमाल",
+    tint: "#FBE6BF",
+    photo: "assets/img/photos/flour-loaf.jpg",
+    blurb: "Authentic Awadhi Sheermal roti — saffron-toned and soft."
+  }
 ];
 
 window.MADHAB_PRODUCTS = [
-  // Rusk & Khari
-  { id: "madhab-rusk-150g", name: "Madhab Rusk", size: "150g", cat: "rusk-khari", img: "rusk-150g.png", featured: true,
-    desc: "Twice-baked golden rusk with a satisfying crunch. The classic Madhab start to the day — dip it in hot chai and enjoy." },
-  { id: "madhab-rusk-75g", name: "Madhab Rusk", size: "75g", cat: "rusk-khari", img: "rusk-75g.png",
-    desc: "Our premium rusk in a handy pocket pack — perfect for tea-time on the go, at the office or while travelling." },
-  { id: "ajwain-khari", name: "Ajwain Khari", size: "130g (10 & 12 Pcs)", cat: "rusk-khari", img: "ajwain-khari.png", featured: true,
-    desc: "Flaky, layered puff khari with the traditional Indian taste of ajwain. Light, crispy and irresistible with chai." },
+  // ==================== LOAVES (12) ====================
+  {
+    id: "premium-white-bread",
+    cat: "loaves",
+    sub: "Premium",
+    name: "Premium White Bread",
+    desc: "Our largest premium white loaf, soft and ready for the whole family.",
+    size: "400g",
+    variants: [
+      { size: "400g", img: "assets/img/products/premium-white-bread.png" }
+    ],
+    img: "assets/img/products/premium-white-bread.png",
+    featured: true
+  },
+  {
+    id: "makkhan-malai-bread",
+    cat: "loaves",
+    sub: "Premium",
+    name: "Makkhan Malai Bread",
+    hindi: "मक्खन मलाई ब्रेड",
+    desc: "A rich, soft loaf from our Makkhan Malai range.",
+    size: "350g · 440g",
+    variants: [
+      { size: "350g", img: "assets/img/products/makkhan-malai-bread.png" },
+      { size: "440g", img: "assets/img/products/makkhan-malai-bread.png" }
+    ],
+    img: "assets/img/products/makkhan-malai-bread.png",
+    featured: true
+  },
+  {
+    id: "malai-makkhan-bread",
+    cat: "loaves",
+    sub: "Premium",
+    name: "Malai Makkhan Bread",
+    hindi: "मलाई मक्खन ब्रेड",
+    desc: "Soft malai bread with a buttery character.",
+    size: "300g",
+    variants: [
+      { size: "300g", img: "assets/img/products/malai-makkhan-bread.png" }
+    ],
+    img: "assets/img/products/malai-makkhan-bread.png"
+  },
+  {
+    id: "extra-long-premium-bread",
+    cat: "loaves",
+    sub: "Premium",
+    name: "Extra Long Premium Bread",
+    desc: "An extra-long premium loaf with more slices in every pack.",
+    size: "250g",
+    variants: [
+      { size: "250g", img: "assets/img/products/extra-long-premium-bread.png" }
+    ],
+    img: "assets/img/products/extra-long-premium-bread.png",
+    featured: true
+  },
+  {
+    id: "premium-long-bread",
+    cat: "loaves",
+    sub: "Premium",
+    name: "Premium Long Bread",
+    desc: "A compact premium long loaf — just the right size for quick meals.",
+    size: "150g",
+    variants: [
+      { size: "150g", img: "assets/img/products/premium-long-bread.png" }
+    ],
+    img: "assets/img/products/premium-long-bread.png"
+  },
+  {
+    id: "white-medium-bread",
+    cat: "loaves",
+    sub: "Everyday",
+    name: "White Medium Bread",
+    desc: "Soft and tasty everyday white bread for every Indian home.",
+    size: "250g",
+    variants: [
+      { size: "250g", img: "assets/img/products/white-medium-bread.png" }
+    ],
+    img: "assets/img/products/white-medium-bread.png"
+  },
+  {
+    id: "sandwich-bread",
+    cat: "loaves",
+    sub: "Everyday",
+    name: "Sandwich Bread",
+    desc: "Soft slices made for sandwiches and toast.",
+    size: "250g",
+    variants: [
+      { size: "250g", img: "assets/img/products/sandwich-bread.png" }
+    ],
+    img: "assets/img/products/sandwich-bread.png",
+    featured: true
+  },
+  {
+    id: "slice-bread",
+    cat: "loaves",
+    sub: "Everyday",
+    name: "Slice Bread",
+    desc: "Ready-sliced bread for quick breakfasts and toasts.",
+    size: "200g",
+    variants: [
+      { size: "200g", img: "assets/img/products/slice-bread.png" }
+    ],
+    img: "assets/img/products/slice-bread.png"
+  },
+  {
+    id: "long-economy-bread",
+    cat: "loaves",
+    sub: "Everyday",
+    name: "Long Economy Bread",
+    desc: "Our value long loaf for every day at an economical price.",
+    size: "125g",
+    variants: [
+      { size: "125g", img: "assets/img/products/long-economy-bread.png" }
+    ],
+    img: "assets/img/products/long-economy-bread.png"
+  },
+  {
+    id: "healthy-white-medium-bread",
+    cat: "loaves",
+    sub: "Everyday",
+    name: "Healthy White Medium Bread",
+    desc: "Soft and delicious white medium bread.",
+    size: "250g",
+    variants: [
+      { size: "250g", img: "assets/img/products/healthy white merda bread.webp" }
+    ],
+    img: "assets/img/products/healthy white merda bread.webp"
+  },
+  {
+    id: "chai-pakoda-bread",
+    cat: "loaves",
+    sub: "Speciality",
+    name: "Chai Pakoda Bread",
+    hindi: "चाय पकौड़ा ब्रेड",
+    desc: "Bread for making crispy bread pakoda at chai time.",
+    size: "300g",
+    variants: [
+      { size: "300g", img: "assets/img/products/download.webp" }
+    ],
+    img: "assets/img/products/download.webp"
+  },
+  {
+    id: "gattu-bread",
+    cat: "loaves",
+    sub: "Everyday",
+    name: "Gattu Bread",
+    desc: "A small, handy loaf — an affordable, filling snack.",
+    size: "100g",
+    variants: [
+      { size: "100g", img: "assets/img/products/gattu-bread.png" }
+    ],
+    img: "assets/img/products/gattu-bread.png"
+  },
 
-  // Breads
-  { id: "premium-white-bread", name: "Premium White Bread", size: "400g", cat: "breads", img: "premium-white-bread.png", featured: true,
-    desc: "Our family-size premium white loaf — soft, fluffy slices baked fresh for breakfasts, toasts and sandwiches." },
-  { id: "makkhan-malai-bread", name: "Makkhan Malai Bread", size: "350g", cat: "breads", img: "makkhan-malai-bread.png", featured: true,
-    desc: "Real taste, pure quality. A rich, creamy loaf inspired by the goodness of makkhan and malai." },
-  { id: "malai-makkhan-bread", name: "Malai Makkhan Bread", size: "300g", cat: "breads", img: "malai-makkhan-bread.png",
-    desc: "Extra soft bread with a buttery malai flavour — a favourite for kids' tiffins and evening snacks." },
-  { id: "extra-long-premium-bread", name: "Extra Long Premium Bread", size: "250g", cat: "breads", img: "extra-long-premium-bread.png",
-    desc: "The wholesome goodness of tradition in an extra-long premium loaf, with more slices in every pack." },
-  { id: "white-medium-bread", name: "White Medium Bread", size: "250g", cat: "breads", img: "white-medium-bread.png",
-    desc: "Soft & tasty medium white bread — the everyday loaf for every Indian home." },
-  { id: "sandwich-bread", name: "Sandwich Bread", size: "250g", cat: "breads", img: "sandwich-bread.png", featured: true,
-    desc: "Evenly sliced, extra-soft sandwich bread that holds every filling — from aloo masala to grilled veggies." },
-  { id: "premium-long-bread", name: "Premium Long Bread", size: "150g", cat: "breads", img: "premium-long-bread.png",
-    desc: "A compact premium long loaf — just the right size for small families and quick meals." },
-  { id: "gattu-bread", name: "Gattu Bread", size: "100g", cat: "breads", img: "gattu-bread.png",
-    desc: "A small, soft Gattu loaf — an affordable, filling snack for any time of the day." },
-  { id: "fruit-gattu", name: "Fruit Gattu", size: "150g", cat: "breads", img: "fruit-gattu.png",
-    desc: "Sweet Gattu studded with colourful tutti-frutti — a fun, fruity treat loved by children." },
-  { id: "slice-bread", name: "Slice Bread", size: "200g", cat: "breads", img: "slice-bread.png",
-    desc: "Ready-sliced soft bread for easy breakfasts, toasts and bread pakodas." },
-  { id: "long-economy-bread", name: "Long Economy Bread", size: "125g", cat: "breads", img: "long-economy-bread.png",
-    desc: "Great value long bread — the same Madhab softness at an everyday economical price." },
+  // ==================== BUNS & PAV (5) ====================
+  {
+    id: "ladi-pav",
+    cat: "buns",
+    sub: "Pav",
+    name: "Ladi Pav",
+    desc: "Soft pull-apart pav for pav bhaji, vada pav and more.",
+    size: "250g (6 pcs) · 350g (12 pcs)",
+    variants: [
+      { size: "250g · 6 pcs", img: "assets/img/products/ladi-pav-250g.png" },
+      { size: "350g · 12 pcs", img: "assets/img/products/ladi-pav-350g.png" }
+    ],
+    img: "assets/img/products/ladi-pav-250g.png",
+    featured: true
+  },
+  {
+    id: "burger-bun",
+    cat: "buns",
+    sub: "Burger",
+    name: "Burger Bun",
+    desc: "Soft buns for burgers at home or on the counter.",
+    size: "225g · 6 pcs",
+    variants: [
+      { size: "225g · 6 pcs", img: "assets/img/products/burger-bun.png" }
+    ],
+    img: "assets/img/products/burger-bun.png",
+    featured: true
+  },
+  {
+    id: "sumo-burger",
+    cat: "buns",
+    sub: "Burger",
+    name: "Sumo Burger",
+    desc: "Large burger buns for generous fillings.",
+    size: "350g · 6 pcs",
+    variants: [
+      { size: "350g · 6 pcs", img: "assets/img/products/sumo-burger.png" }
+    ],
+    img: "assets/img/products/sumo-burger.png"
+  },
+  {
+    id: "till-bun",
+    cat: "buns",
+    sub: "Bun",
+    name: "Till Bun",
+    desc: "Sesame-topped soft buns in a six-piece pack.",
+    size: "350g · 6 pcs",
+    variants: [
+      { size: "350g · 6 pcs", img: "assets/img/products/till-bun.png" }
+    ],
+    img: "assets/img/products/till-bun.png"
+  },
+  {
+    id: "twin-bun",
+    cat: "buns",
+    sub: "Bun",
+    name: "Twin Bun",
+    desc: "A handy two-piece pack of soft buns.",
+    size: "150g · 2 pcs",
+    variants: [
+      { size: "150g · 2 pcs", img: "assets/img/products/twin-bun.png" }
+    ],
+    img: "assets/img/products/twin-bun.png"
+  },
 
-  // Buns & Pav
-  { id: "sumo-burger", name: "Sumo Burger", size: "350g (6 Pcs)", cat: "buns-pav", img: "sumo-burger.png",
-    desc: "Big, soft burger buns in a value 6-piece pack — built for generous fillings." },
-  { id: "twin-bun", name: "Twin Bun", size: "150g (2 Pcs)", cat: "buns-pav", img: "twin-bun.png",
-    desc: "Two soft, sweet buns in one pack — a quick snack with tea or milk." },
-  { id: "burger-bun", name: "Burger Bun", size: "225g (6 Pcs)", cat: "buns-pav", img: "burger-bun.png", featured: true,
-    desc: "Fresh 'n' tasty burger buns with a light, fluffy crumb — ready for your favourite veg patty." },
-  { id: "till-bun", name: "Till Bun", size: "350g (6 Pcs)", cat: "buns-pav", img: "till-bun.png",
-    desc: "Sesame-topped Till Bun with a golden crust and soft inside — rich in taste." },
-  { id: "ladi-pav-250g", name: "Ladi Pav", size: "250g (6 Pcs)", cat: "buns-pav", img: "ladi-pav-250g.png", featured: true,
-    desc: "Soft, pull-apart Ladi Pav — made for pav bhaji, vada pav and misal." },
-  { id: "ladi-pav-350g", name: "Ladi Pav", size: "350g (12 Pcs)", cat: "buns-pav", img: "ladi-pav-350g.png",
-    desc: "Our 12-piece Ladi Pav tray for the whole family or your food stall." },
+  // ==================== RUSK & KHARI (2) ====================
+  {
+    id: "rusk",
+    cat: "rusk",
+    sub: "Rusk",
+    name: "Madhab Rusk",
+    desc: "Golden, crunchy premium rusk, made for chai time.",
+    size: "150g · 75g",
+    variants: [
+      { size: "150g", img: "assets/img/products/rusk-150g.png" },
+      { size: "75g", img: "assets/img/products/rusk-75g.png" }
+    ],
+    img: "assets/img/products/rusk-150g.png",
+    featured: true
+  },
+  {
+    id: "ajwain-khari",
+    cat: "rusk",
+    sub: "Khari",
+    name: "Ajwain Khari",
+    desc: "Crisp, flaky khari with ajwain.",
+    size: "130g · 10 pcs / 12 pcs",
+    variants: [
+      { size: "130g · 10 pcs", img: "assets/img/products/ajwain-khari.png" },
+      { size: "130g · 12 pcs", img: "assets/img/products/ajwain-khari.png" }
+    ],
+    img: "assets/img/products/ajwain-khari.png",
+    featured: true
+  },
 
-  // Cream
-  { id: "cream-roll", name: "Cream Roll", size: "500g (12 Pcs)", cat: "cream", img: "cream-roll.png", featured: true,
-    desc: "Crisp, flaky cones filled with smooth sweet cream. A tasty one, healthy fun for kids and grown-ups alike." },
-  { id: "cream-bun", name: "Cream Bun", size: "250g (6 Pcs)", cat: "cream", img: "cream-bun.png", featured: true,
-    desc: "Soft buns loaded with sweet vanilla cream — a delicious evening treat." },
+  // ==================== SWEET BAKES (3) ====================
+  {
+    id: "cream-roll",
+    cat: "sweet",
+    sub: "Cream",
+    name: "Cream Roll",
+    desc: "Pastry rolls with a sweet cream filling.",
+    size: "500g · 12 pcs",
+    variants: [
+      { size: "500g · 12 pcs", img: "assets/img/products/cream-roll.png" }
+    ],
+    img: "assets/img/products/cream-roll.png",
+    featured: true
+  },
+  {
+    id: "cream-bun",
+    cat: "sweet",
+    sub: "Cream",
+    name: "Cream Bun",
+    desc: "Soft buns with a sweet vanilla cream filling.",
+    size: "250g · 6 pcs",
+    variants: [
+      { size: "250g · 6 pcs", img: "assets/img/products/cream-bun.png" }
+    ],
+    img: "assets/img/products/cream-bun.png",
+    featured: true
+  },
+  {
+    id: "fruit-gattu",
+    cat: "sweet",
+    sub: "Fruit",
+    name: "Fruit Gattu",
+    desc: "A soft loaf studded with colourful tutti-frutti pieces.",
+    size: "150g",
+    variants: [
+      { size: "150g", img: "assets/img/products/fruit-gattu.png" }
+    ],
+    img: "assets/img/products/fruit-gattu.png"
+  },
 
-  // Sheermal
-  { id: "sheermal-roti-100g", name: "Sheermal Roti", size: "100g", cat: "sheermal", img: "sheermal-roti-100g.png",
-    desc: "The Awadhi favourite — mildly sweet, soft Sheermal Roti, lovely with korma or simply with tea." },
-  { id: "sheermal-roti-200g", name: "Sheermal Roti", size: "200g", cat: "sheermal", img: "sheermal-roti-200g.png",
-    desc: "A bigger pack of our traditional Sheermal Roti for festive meals and family gatherings." }
+  // ==================== TRADITIONAL (1) ====================
+  {
+    id: "sheermal-roti",
+    cat: "traditional",
+    sub: "Roti",
+    name: "Sheermal Roti",
+    desc: "Sheermal, a traditional Awadhi bake, in two pack sizes.",
+    size: "100g · 200g",
+    variants: [
+      { size: "100g", img: "assets/img/products/sheermal-roti-100g.png" },
+      { size: "200g", img: "assets/img/products/sheermal-roti-200g.png" }
+    ],
+    img: "assets/img/products/sheermal-roti-100g.png",
+    featured: true
+  }
 ];

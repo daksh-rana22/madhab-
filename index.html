@@ -24,14 +24,15 @@
           <span class="pill">✦ Since 2020</span>
         </div>
         <h1 class="reveal" data-delay="1">
-          <span class="line">Wholesome Goodness,</span>
-          <span class="line"><em class="accent">Delicious</em> 100%</span>
-          <span class="line">Vegetarian</span>
+          <span class="line">Wholesome goodness</span>
+          <span class="line">in every <span class="h1-rot" id="rotWord">bake.</span></span>
         </h1>
         <p class="lead reveal" data-delay="2">From golden Madhab Rusk for your morning chai to soft Makkhan Malai Bread and pillowy Ladi Pav — premium eggless bakery, baked with family values and modern precision.</p>
         <div class="hero-actions reveal" data-delay="3">
           <a class="btn btn-primary" href="products.html">Explore Products
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+          <a class="btn btn-ghost" href="distributor.html">Partner with us</a>
         </div>
         <div class="hero-stats reveal" data-delay="4">
           <div><strong data-count="24">24</strong><span>Bakery products</span></div>
@@ -40,16 +41,26 @@
         </div>
       </div>
 
-      <div class="hero-visual reveal" data-delay="2">
-        <div class="hero-blob"><img src="assets/img/photos/hero-breads.jpg" alt="Freshly baked breads and buns"></div>
-        <div class="hero-seal">
-          <svg viewBox="0 0 100 100"><defs><path id="c" d="M50,50 m-38,0 a38,38 0 1,1 76,0 a38,38 0 1,1 -76,0"/></defs>
-            <text font-size="9.5" font-weight="700" letter-spacing="2.2" fill="#fff"><textPath href="#c">100% EGGLESS • PURE VEG • FRESH •</textPath></text></svg>
-          <b>100%<br>Veg</b>
+      <div class="show reveal" id="show" data-delay="2">
+        <div class="disc">
+          <svg class="ring-spin" viewBox="0 0 500 500" aria-hidden="true">
+            <defs>
+              <path id="ringPath" d="M250,250 m-226,0 a226,226 0 1,1 452,0 a226,226 0 1,1 -452,0"/>
+            </defs>
+            <text>
+              <textPath href="#ringPath" textLength="1415" lengthAdjust="spacing">100% EGGLESS • PURE VEGETARIAN • BAKED IN SULTANPUR • MADHAB • 100% EGGLESS • PURE VEGETARIAN • BAKED IN SULTANPUR • MADHAB •</textPath>
+            </text>
+          </svg>
+          <div class="prods" id="prods"></div>
+          <img class="plaque" src="assets/img/brand/wordmark.png" alt="Madhab">
         </div>
-        <img class="float f1" src="assets/img/products/ajwain-khari.png" alt="Madhab Ajwain Khari">
-        <img class="float f2" src="assets/img/products/cream-roll.png" alt="Madhab Cream Roll">
-        <img class="float f3" src="assets/img/products/makkhan-malai-bread.png" alt="Madhab Makkhan Malai Bread">
+        <div class="cap">
+          <a id="showLink" href="products.html">
+            <b id="showName">Makkhan Malai Bread</b>
+            <span id="showSize">100g · 250g · 400g</span>
+          </a>
+          <div class="bars" id="bars" role="tablist" aria-label="Featured product carousel"></div>
+        </div>
       </div>
     </div>
   </section>
@@ -77,11 +88,11 @@
         <p class="lead">Five delicious families of eggless bakery products — made for breakfast tables, tiffin boxes, tea-time and street-food stalls.</p>
       </div>
       <div class="cat-grid">
-        <a class="cat-card reveal" href="products.html#breads"><img class="bg" src="assets/img/photos/sliced-bread.jpg" alt=""><span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span><span class="hindi">ब्रेड</span><h3>Breads</h3><small>11 varieties</small></a>
-        <a class="cat-card reveal" data-delay="1" href="products.html#rusk-khari"><img class="bg" src="assets/img/photos/chai.jpg" alt=""><span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span><span class="hindi">रस्क और खारी</span><h3>Rusk &amp; Khari</h3><small>3 varieties</small></a>
-        <a class="cat-card reveal" data-delay="2" href="products.html#buns-pav"><img class="bg" src="assets/img/photos/pav-bhaji.jpg" alt=""><span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span><span class="hindi">बन और पाव</span><h3>Buns &amp; Pav</h3><small>6 varieties</small></a>
-        <a class="cat-card reveal" data-delay="3" href="products.html#cream"><img class="bg" src="assets/img/photos/baked-tray.jpg" alt=""><span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span><span class="hindi">क्रीम डिलाइट्स</span><h3>Cream Delights</h3><small>2 varieties</small></a>
-        <a class="cat-card reveal" data-delay="4" href="products.html#sheermal"><img class="bg" src="assets/img/photos/flour-loaf.jpg" alt=""><span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span><span class="hindi">शीरमाल</span><h3>Sheermal</h3><small>2 sizes</small></a>
+        <a class="cat-card reveal" href="products.html#loaves"><img class="bg" src="assets/img/photos/sliced-bread.jpg" alt=""><span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span><span class="hindi">ब्रेड एवं लोव्स</span><h3>Loaves</h3><small>12 products</small></a>
+        <a class="cat-card reveal" data-delay="1" href="products.html#buns"><img class="bg" src="assets/img/photos/pav-bhaji.jpg" alt=""><span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span><span class="hindi">बन और पाव</span><h3>Buns &amp; Pav</h3><small>5 products</small></a>
+        <a class="cat-card reveal" data-delay="2" href="products.html#rusk"><img class="bg" src="assets/img/photos/chai.jpg" alt=""><span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span><span class="hindi">रस्क और खारी</span><h3>Rusk &amp; Khari</h3><small>2 products</small></a>
+        <a class="cat-card reveal" data-delay="3" href="products.html#sweet"><img class="bg" src="assets/img/photos/baked-tray.jpg" alt=""><span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span><span class="hindi">स्वीट बेक्स</span><h3>Sweet Bakes</h3><small>3 products</small></a>
+        <a class="cat-card reveal" data-delay="4" href="products.html#traditional"><img class="bg" src="assets/img/photos/flour-loaf.jpg" alt=""><span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span><span class="hindi">शीरमाल</span><h3>Traditional</h3><small>1 product</small></a>
       </div>
     </div>
   </section>
@@ -112,7 +123,7 @@
           <span class="eyebrow">Bestsellers</span>
           <h2 style="margin:0">Loved in every <em class="accent">household</em></h2>
         </div>
-        <a class="btn btn-dark" href="products.html">View all 24 products
+        <a class="btn btn-dark" href="products.html">View all 23 products
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
       </div>
       <div class="product-grid" id="featured-grid"></div>
@@ -156,43 +167,91 @@
     </div>
   </section>
 
-  <!-- STATS -->
+  <!-- STATS (Image 2 style) -->
   <section class="section-tight">
     <div class="container">
-      <div class="stats-band reveal">
-        <div class="stat"><strong data-count="24">24</strong><span>Bakery products</span></div>
-        <div class="stat"><strong data-count="5">5</strong><span>Product families</span></div>
-        <div class="stat"><strong data-count="6" data-suffix="+">6+</strong><span>Years of experience</span></div>
-        <div class="stat"><strong data-count="100" data-suffix="%">100%</strong><span>Eggless &amp; vegetarian</span></div>
+      <div class="stats-row reveal">
+        <div class="stat-item">
+          <strong class="num" data-count="2020">2020</strong>
+          <span class="lbl">Year we began</span>
+        </div>
+        <div class="stat-item">
+          <strong class="num" data-count="23">23</strong>
+          <span class="lbl">Products in the range</span>
+        </div>
+        <div class="stat-item">
+          <strong class="num" data-count="300000" data-indian="true">3,00,000</strong>
+          <span class="lbl">Packets of bread a day (capacity)</span>
+        </div>
+        <div class="stat-item">
+          <strong class="num" data-count="100" data-suffix="%">100%</strong>
+          <span class="lbl">Eggless &amp; vegetarian</span>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- MEALS -->
-  <section class="section">
+  <!-- COOK WITH MADHAB / RECIPES -->
+  <section class="section" id="kitchen" aria-labelledby="k-h">
     <div class="container">
-      <div class="section-head center reveal">
-        <span class="eyebrow">Made for your menu</span>
-        <h2>From <em class="accent">nashta</em> to night-time cravings</h2>
+      <div class="section-head reveal" style="display:flex;justify-content:space-between;align-items:end;gap:30px;flex-wrap:wrap">
+        <div>
+          <span class="eyebrow">Cook with Madhab</span>
+          <h2 id="k-h" style="margin:0">Our <em class="accent">recipes.</em></h2>
+        </div>
+        <p class="lead" style="max-width:540px;margin:0">From a classic chai-and-rusk break to pav bhaji nights and homemade burgers, these easy recipes bring Madhab favourites straight to your kitchen.</p>
       </div>
-      <div class="meals">
-        <a class="meal reveal" href="product.html?id=ladi-pav-250g">
-          <div class="meal-img"><img src="assets/img/photos/pav-bhaji.jpg" alt="Pav bhaji"><img class="pack" src="assets/img/products/ladi-pav-250g.png" alt=""></div>
-          <div class="meal-body"><h4>Pav Bhaji Nights</h4><p>Butter-toasted Madhab Ladi Pav.</p></div>
+
+      <div class="kgrid" id="kgrid">
+        <a class="kcard reveal" href="#recipe/chai-and-rusk" data-recipe="chai-and-rusk">
+          <div class="ph photo">
+            <span class="tag">Madhab Rusk</span>
+            <img class="dish" src="assets/img/photos/chai.jpg" alt="Chai &amp; Rusk" loading="lazy">
+            <span class="pack" aria-hidden="true"><img src="assets/img/products/rusk-150g.png" alt="" loading="lazy"></span>
+          </div>
+          <span class="meta">8 min · Easy</span>
+          <h3>Chai &amp; Rusk</h3>
+          <p>The classic morning pairing.</p>
+          <span class="arrow-link">View recipe <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
         </a>
-        <a class="meal reveal" data-delay="1" href="product.html?id=burger-bun">
-          <div class="meal-img"><img src="assets/img/photos/burger.jpg" alt="Veg burger"><img class="pack" src="assets/img/products/burger-bun.png" alt=""></div>
-          <div class="meal-body"><h4>Burger Cravings</h4><p>Fresh 'n' tasty Madhab Burger Bun.</p></div>
+
+        <a class="kcard reveal" data-delay="1" href="#recipe/pav-bhaji" data-recipe="pav-bhaji">
+          <div class="ph photo">
+            <span class="tag">Madhab Ladi Pav</span>
+            <img class="dish" src="assets/img/photos/pav-bhaji.jpg" alt="Pav Bhaji" loading="lazy">
+            <span class="pack" aria-hidden="true"><img src="assets/img/products/ladi-pav-250g.png" alt="" loading="lazy"></span>
+          </div>
+          <span class="meta">45 min · Easy</span>
+          <h3>Pav Bhaji</h3>
+          <p>Soft pav, toasted with butter.</p>
+          <span class="arrow-link">View recipe <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
         </a>
-        <a class="meal reveal" data-delay="2" href="product.html?id=sandwich-bread">
-          <div class="meal-img"><img src="assets/img/photos/sandwich.jpg" alt="Grilled sandwich"><img class="pack" src="assets/img/products/sandwich-bread.png" alt="" style="width:24%"></div>
-          <div class="meal-body"><h4>Grilled Sandwiches</h4><p>Extra-soft Madhab Sandwich Bread.</p></div>
+
+        <a class="kcard reveal" data-delay="2" href="#recipe/tiffin-sandwich" data-recipe="tiffin-sandwich">
+          <div class="ph photo">
+            <span class="tag">Madhab Sandwich Bread</span>
+            <img class="dish" src="assets/img/photos/sandwich.jpg" alt="Tiffin Sandwiches" loading="lazy">
+            <span class="pack" aria-hidden="true"><img src="assets/img/products/sandwich-bread.png" alt="" loading="lazy"></span>
+          </div>
+          <span class="meta">10 min · Easy</span>
+          <h3>Tiffin Sandwiches</h3>
+          <p>Even slices for the lunch box.</p>
+          <span class="arrow-link">View recipe <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
         </a>
-        <a class="meal reveal" data-delay="3" href="product.html?id=madhab-rusk-150g">
-          <div class="meal-img"><img src="assets/img/photos/tea-cookies.jpg" alt="Tea time"><img class="pack" src="assets/img/products/rusk-150g.png" alt="" style="width:56%"></div>
-          <div class="meal-body"><h4>Chai Time</h4><p>Crunchy Madhab Rusk, every evening.</p></div>
+
+        <a class="kcard reveal" data-delay="3" href="#recipe/aloo-tikki-burger" data-recipe="aloo-tikki-burger">
+          <div class="ph photo">
+            <span class="tag">Madhab Burger Bun</span>
+            <img class="dish" src="assets/img/photos/burger.jpg" alt="Aloo Tikki Burger" loading="lazy">
+            <span class="pack" aria-hidden="true"><img src="assets/img/products/burger-bun.png" alt="" loading="lazy"></span>
+          </div>
+          <span class="meta">30 min · Easy</span>
+          <h3>Aloo Tikki Burger</h3>
+          <p>Crispy aloo tikki, soft bun, homemade burger.</p>
+          <span class="arrow-link">View recipe <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
         </a>
       </div>
+      <p class="recipe-note reveal">More recipes coming soon.</p>
     </div>
   </section>
 
@@ -202,7 +261,7 @@
       <div class="wordmark-art reveal"><img class="wm" src="assets/img/brand/wordmark.png" alt="Madhab"></div>
       <div class="quote-card reveal" data-delay="1">
         <div class="qmark">“</div>
-        <blockquote>What started as a humble family-run bakery with simple equipment and big dreams has today transformed into a large-scale manufacturing unit. Your trust fuels our journey, and we look forward to baking many more memories together.</blockquote>
+        <blockquote>We've blended traditional recipes with modern processes, so every product reflects the values we hold dear: quality, trust and taste.</blockquote>
         <div class="quote-author">
           <img class="av av-photo" src="assets/img/team/manju-devi.png" alt="">
           <div><strong>Manju Devi</strong><span>Director, Madhab Milk and Dairy House Agro Business Pvt. Ltd.</span></div>
@@ -227,6 +286,220 @@
       </div>
     </div>
   </section>
+
+  <!-- SOCIAL / INSTAGRAM -->
+  <section class="section social" id="social" aria-labelledby="s-h">
+    <div class="container">
+      <div class="soc-card reveal">
+        <div class="soc-copy">
+          <span class="eyebrow">Follow the bake</span>
+          <h2 id="s-h">Say hello on <em class="accent">Instagram.</em></h2>
+          <p class="lead" style="color:var(--text)">Follow <strong>@madhabbread</strong> for what's fresh at Madhab, and tag us when you enjoy our breads.</p>
+          <ul class="soc-list">
+            <li>
+              <span class="si" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M5 10.5C3.3 10 3 8.8 3 8c0-2.2 2.9-4 9-4s9 1.8 9 4c0 .8-.3 2-2 2.5V19a1 1 0 01-1 1H6a1 1 0 01-1-1z"/></svg>
+              </span>
+              <div>
+                <b>New launches</b>
+                <span>See new breads and packs first.</span>
+              </div>
+            </li>
+            <li>
+              <span class="si" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M3 20V10l5 3V10l5 3V6h3v-2h3v16zM3 20h18"/></svg>
+              </span>
+              <div>
+                <b>Inside our factory</b>
+                <span>Moments from our plant in Sultanpur.</span>
+              </div>
+            </li>
+            <li>
+              <span class="si" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M4 5h16v11H9l-5 4z"/></svg>
+              </span>
+              <div>
+                <b>Serving ideas</b>
+                <span>Easy ways to enjoy Madhab at home.</span>
+              </div>
+            </li>
+          </ul>
+          <div class="soc-btns">
+            <a class="btn btn-ig" href="https://www.instagram.com/madhabbread/" target="_blank" rel="noopener" aria-label="Follow @madhabbread on Instagram">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+              Follow @madhabbread
+            </a>
+            <a class="btn btn-fb-outline" href="https://www.facebook.com/p/Madhab-Milk-and-Dairy-House-Agro-Business-Private-Limited-61587177086798/" target="_blank" rel="noopener" aria-label="Madhab Facebook Page">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v2H8v4h2v8h4v-8h3l1-4h-4V8z"/></svg>
+              Facebook
+            </a>
+          </div>
+        </div>
+
+        <a class="phone" href="https://www.instagram.com/madhabbread/" target="_blank" rel="noopener" aria-label="Open Madhab on Instagram">
+          <span class="ph-notch" aria-hidden="true"></span>
+          <span class="ph-screen">
+            <span class="ph-top">
+              <b>madhabbread</b>
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+            </span>
+            <span class="ph-prof">
+              <span class="ph-av">
+                <span class="ring" aria-hidden="true"></span>
+                <img src="assets/img/brand/emblem.png" alt="Madhab Profile">
+              </span>
+              <span class="ph-name">
+                <b>Madhab</b>
+                <small>Breads · Buns · Pav · Rusk<br>Sultanpur, Uttar Pradesh</small>
+              </span>
+            </span>
+            <span class="ph-follow">Follow</span>
+            <span class="ph-grid-wrap">
+              <span class="ph-grid">
+                <i style="background-image:url('assets/img/photos/pav-bhaji.jpg')"></i>
+                <i class="pk" style="background-image:url('assets/img/products/ladi-pav-250g.png')"></i>
+                <i style="background-image:url('assets/img/photos/baked-tray.jpg')"></i>
+                <i style="background-image:url('assets/img/photos/burger.jpg')"></i>
+                <i class="pk" style="background-image:url('assets/img/products/rusk-150g.png')"></i>
+                <i class="pk" style="background-image:url('assets/img/products/cream-roll.png')"></i>
+                <i style="background-image:url('assets/img/photos/sandwich.jpg')"></i>
+                <i class="pk" style="background-image:url('assets/img/products/makkhan-malai-bread.png')"></i>
+                <i class="pk" style="background-image:url('assets/img/products/extra-long-premium-bread.png')"></i>
+                <i class="pk" style="background-image:url('assets/img/products/ajwain-khari.png')"></i>
+                <i class="pk" style="background-image:url('assets/img/products/burger-bun.png')"></i>
+                <i class="pk" style="background-image:url('assets/img/products/sheermal-roti-100g.png')"></i>
+                <!-- duplicate for infinite seamless loop -->
+                <i style="background-image:url('assets/img/photos/pav-bhaji.jpg')"></i>
+                <i class="pk" style="background-image:url('assets/img/products/ladi-pav-250g.png')"></i>
+                <i style="background-image:url('assets/img/photos/baked-tray.jpg')"></i>
+                <i style="background-image:url('assets/img/photos/burger.jpg')"></i>
+                <i class="pk" style="background-image:url('assets/img/products/rusk-150g.png')"></i>
+                <i class="pk" style="background-image:url('assets/img/products/cream-roll.png')"></i>
+                <i style="background-image:url('assets/img/photos/sandwich.jpg')"></i>
+                <i class="pk" style="background-image:url('assets/img/products/makkhan-malai-bread.png')"></i>
+                <i class="pk" style="background-image:url('assets/img/products/extra-long-premium-bread.png')"></i>
+                <i class="pk" style="background-image:url('assets/img/products/ajwain-khari.png')"></i>
+                <i class="pk" style="background-image:url('assets/img/products/burger-bun.png')"></i>
+                <i class="pk" style="background-image:url('assets/img/products/sheermal-roti-100g.png')"></i>
+              </span>
+            </span>
+          </span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCT SHEET MODAL (Image 2 style) -->
+  <dialog class="sheet" id="sheet" aria-labelledby="sName">
+    <div class="sheet-in">
+      <button class="x" id="sClose" type="button" aria-label="Close product details">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
+      </button>
+      <div class="media" id="sMedia">
+        <img id="sImg" src="assets/img/products/premium-white-bread.png" alt="Product">
+        <span class="hint">Hover to zoom</span>
+      </div>
+      <div class="info">
+        <span class="eyebrow" id="sCat">LOAVES · PREMIUM</span>
+        <h2 id="sName">Premium White Bread</h2>
+        <p class="hi-title" id="sHi"></p>
+        <p class="desc" id="sDesc">Our largest premium white loaf, soft and ready for the whole family.</p>
+        
+        <div class="lbl-avail">AVAILABLE IN</div>
+        <div class="size-chips" id="sSizes"></div>
+        
+        <div class="specs">
+          <details>
+            <summary>
+              <span>At a glance</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 5v14M5 12h14"/></svg>
+            </summary>
+            <div class="dd" id="sGlance"></div>
+          </details>
+          <details>
+            <summary>
+              <span>Ingredients &amp; allergens</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 5v14M5 12h14"/></svg>
+            </summary>
+            <div class="dd">
+              <p>100% vegetarian &amp; eggless formulation. Full ingredient and allergen details are printed on every retail pack.</p>
+            </div>
+          </details>
+          <details>
+            <summary>
+              <span>Nutrition</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 5v14M5 12h14"/></svg>
+            </summary>
+            <div class="dd">
+              <p>Nutrition values per 100g (Energy, Carbohydrates, Dietary Fibre, Protein, Fats) are certified and clearly printed on every package label.</p>
+            </div>
+          </details>
+          <details>
+            <summary>
+              <span>Shelf life &amp; storage</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 5v14M5 12h14"/></svg>
+            </summary>
+            <div class="dd">
+              <p>Please check the best-before date printed on the seal. Store in a clean, cool, dry and hygienic place away from direct sunlight and strong odours.</p>
+            </div>
+          </details>
+        </div>
+
+        <div class="acts">
+          <a class="btn-red" href="contact.html" id="sBuy">Where to buy</a>
+          <a class="btn-line" href="distributor.html" id="sEnq">Bulk / trade enquiry</a>
+        </div>
+
+        <div class="pager">
+          <button type="button" id="sPrev">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M15 18l-6-6 6-6"/></svg>
+            <span id="sPrevName">Prev</span>
+          </button>
+          <button type="button" id="sNext">
+            <span id="sNextName">Next</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M9 18l6-6-6-6"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- RECIPE SHEET MODAL -->
+  <dialog class="sheet recipe" id="rsheet" aria-labelledby="rName">
+    <div class="sheet-in">
+      <button class="x" id="rClose" aria-label="Close recipe">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M18 6L6 18M6 6l12 12"/></svg>
+      </button>
+      <div class="media dish"><img id="rImg" alt=""></div>
+      <div class="info">
+        <span class="eyebrow" id="rProdEyebrow">Recipe · Made with <span id="rProd"></span></span>
+        <h2 id="rName"></h2>
+        <p class="rsub" id="rSub"></p>
+        <p class="desc" id="rTag"></p>
+        <div class="rmeta" id="rMeta"></div>
+        <div class="made" id="rMade"></div>
+        
+        <p class="lbl-avail" style="margin-top:20px">INGREDIENTS <span class="lbl-hint" style="font-size:.76rem;color:var(--muted);text-transform:none;font-weight:500;margin-left:8px">(tap to tick off)</span></p>
+        <div class="ing" id="rIng"></div>
+        
+        <p class="lbl-avail" style="margin-top:20px">METHOD</p>
+        <ol class="rsteps" id="rSteps"></ol>
+        
+        <div class="rtip" id="rTip"></div>
+        
+        <div class="pager">
+          <button type="button" id="rPrev">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M15 18l-6-6 6-6"/></svg>
+            <span id="rPrevName">Prev</span>
+          </button>
+          <button type="button" id="rNext">
+            <span id="rNextName">Next</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M9 18l6-6-6-6"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </dialog>
 
   <script src="js/products.js"></script>
   <script src="js/main.js"></script>
