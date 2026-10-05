@@ -160,7 +160,7 @@
   if (featured) {
     featured.innerHTML = (window.MADHAB_PRODUCTS || [])
       .filter(p => p.featured)
-      .slice(0, 8)
+      .slice(0, 10)
       .map((p, i) => madhabCard(p, i % 4))
       .join("");
   }

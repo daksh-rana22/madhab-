@@ -235,7 +235,8 @@ window.MADHAB_PRODUCTS = [
     variants: [
       { size: "350g · 6 pcs", img: "assets/img/products/sumo-burger.png" }
     ],
-    img: "assets/img/products/sumo-burger.png"
+    img: "assets/img/products/sumo-burger.png",
+    featured: true
   },
   {
     id: "till-bun",
