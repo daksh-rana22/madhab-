@@ -940,10 +940,15 @@ footer .need::before{background:#B98A18}
   .dn-panel{bottom:calc(136px + env(safe-area-inset-bottom));left:10px}
   footer{padding-bottom:calc(110px + env(safe-area-inset-bottom))}
 }
+@media (max-width:600px){
+  .kgrid{grid-template-columns:1fr;gap:16px}
+  .kcard .ph{aspect-ratio:16/10}
+}
 @media (max-width:420px){
   .router{grid-template-columns:1fr}
   .route{flex-direction:row;align-items:center}
   .qgrid{grid-template-columns:1fr}
+  .kgrid{grid-template-columns:1fr}
 }
 </style>
 </head>

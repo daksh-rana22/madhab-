@@ -2275,6 +2275,7 @@ dialog.sheet::backdrop {
   .cat-grid { grid-template-columns: repeat(3, 1fr); }
   .steps { grid-template-columns: repeat(3, 1fr); }
   .meals { grid-template-columns: repeat(2, 1fr); }
+  .kgrid { grid-template-columns: repeat(2, 1fr); gap: 18px; }
   .footer-grid { grid-template-columns: 1fr 1fr; gap: 36px; }
   .nav-links a { padding: 8px 14px; font-size: .88rem; }
 }
@@ -2506,6 +2507,53 @@ dialog.sheet::backdrop {
   .meals { grid-template-columns: 1fr; gap: 16px; }
   .meal-body { padding: 14px 16px 16px; }
   .meal-body h4 { font-size: 1.05rem; }
+
+  /* Recipes Section (Cook with Madhab) */
+  .kgrid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .kcard {
+    padding: 16px;
+    border-radius: 20px;
+  }
+  .kcard .ph {
+    aspect-ratio: 16 / 10;
+    border-radius: 14px;
+  }
+  .kcard .tag {
+    top: 10px;
+    left: 10px;
+    font-size: .75rem;
+    padding: 4px 10px;
+  }
+  .kcard .pack {
+    width: 52px;
+    height: 52px;
+    right: 10px;
+    bottom: 10px;
+  }
+  .kcard .meta {
+    font-size: .76rem;
+    margin-top: 14px;
+  }
+  .kcard h3 {
+    font-size: 1.25rem;
+    margin-top: 4px;
+    margin-bottom: 4px;
+  }
+  .kcard p {
+    font-size: .9rem;
+    line-height: 1.45;
+  }
+  .kcard .arrow-link {
+    margin-top: 12px;
+    font-size: .88rem;
+  }
+  .recipe-note {
+    margin-top: 20px;
+    font-size: .85rem;
+  }
 
   /* Quote & Director */
   .quote-wrap { gap: 26px; }
